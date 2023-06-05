@@ -1,0 +1,32 @@
+@api=http://localhost:5500/comics
+
+##Obtener todos los comics
+GET {{api}}
+### Nuevo comic
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name":"Hombre Araña",
+    "description":"Humano con superpoderes arácnidos",
+    "editorial":"MARVEL Studios",
+    "fecha":"10/08/1962",
+    "categoria":"Drama",
+    "estrellas":4
+}
+
+### Eliminar comics por ID
+DELETE {{api}}/1
+
+### Actualizar comics
+PUT {{api}}/1
+Content-Type: application/json
+
+{
+    "name": "Iron Man",
+    "description": "Genio, filantropo y multimillonario",
+    "editorial": "Marvel Studios",
+    "fecha":"13/04/1978",
+    "categoria":"Acción",
+    "estrellas":4
+}

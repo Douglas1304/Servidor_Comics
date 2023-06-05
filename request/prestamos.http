@@ -1,0 +1,22 @@
+@api=http://localhost:5500/prestamos
+
+## Obtener todos los prestamos
+GET {{api}}
+
+### agregar un prestamo
+POST {{api}}
+Content-Type: application/json
+
+{
+    "id_comic":1,
+    "persona":"Arberto Carlos",
+    "fecha_prestamo":"04/07/2003"
+}
+
+### validar si hay registro por ID
+GET {{api}}/3
+
+### Eliminar prestamos por ID
+DELETE {{api}}/1
+
+
